@@ -5,9 +5,11 @@ body{font-family: "Roboto", sans-serif;
  a {
      text-decoration: none;
  }
- ul,ol{ list-style-type: none;
-margin: 0;
-    padding-left: 0;}
+ ul,ol{ 
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
  button{cursor: pointer;}
 .header {}
 h1,
@@ -21,6 +23,13 @@ p {
 }
 img {
     display: block;
+}
+.container{
+    width: 1168px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
 }
 .header__nav {}
 
