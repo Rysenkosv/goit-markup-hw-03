@@ -135,13 +135,13 @@ img {
     background: #4d5ae5;
     margin: 0 auto 188px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     border: 1px solid #000;
     border-radius: 4px;
-    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
     }
 .hero__button:hover,.hero__button:focus{color: #fff;background: #404bbf;}
 /* main 2 servis */
@@ -155,13 +155,12 @@ img {
 
 .services__list {
     display: flex;
-    gap: 24px;
     padding-left: 156px;
-    padding-right: 156px;
+    padding-right: 156px; 
 }
-
 .services__item {
-}
+    width: calc(100%-72px)/4;
+    }
 
 .services__subtitle {font-weight: 500;
     font-size: 20px;
