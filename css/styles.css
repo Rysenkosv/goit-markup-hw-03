@@ -26,10 +26,10 @@ img {
     display: block;
 }
 .container{
-    max-width: 1158pxpx;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0;
+    margin: 0 auto;
 }
 /* header */
 .header {
@@ -116,6 +116,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .hero__title {font-weight: 700;
@@ -125,6 +126,8 @@ img {
     text-align: center;
     color: #fff;
     padding: 188px 472px 48px 472px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero__button {font-weight: 500;
@@ -156,10 +159,12 @@ img {
 .services__list {
     display: flex;
     padding-left: 156px;
-    padding-right: 156px; 
+    padding-right: 156px;
+    gap: 24px;
+    align-items: center;
 }
 .services__item {
-    width: calc(100%-72px)/4;
+    width: calc((100% - 72px) / 4);
     }
 
 .services__subtitle {font-weight: 500;
@@ -180,8 +185,7 @@ img {
 }
 /* Team main */
 .team {background-color: #F4F4FD;}
-.team-contr{
-}
+
 .team__title {font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -189,29 +193,49 @@ img {
     text-align: center;
     color: #2e2f42;
 text-transform: capitalize;
+padding: 120px 639px 72px 639px;
 }
 
 .team__list {
     display: flex;
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-bottom: 120px;
 }
 
-.team__member {background-color: #FFFFFF;}
+.team__member {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    }
 
 .team__photo {}
+.team-contr{
+    padding: 32px 16px;
+}
 
-.team__name {font-weight: 500;
+.team__name {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #2e2f42;}
+    color: #2e2f42;
+    padding-bottom: 8px;
+    padding-right: 49px;
+    padding-left: 49px;
+}
 
-.team__role {font-weight: 400;
+.team__role {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #434455;}
+    color: #434455;
+    padding-right: 52px;
+    padding-left: 52px;
+}
 /* < !-- Portfolio --> */
 .portfolio {background-color: #F4F4FD;}
 
@@ -224,9 +248,16 @@ text-transform: capitalize;
     text-transform: capitalize;
 }
 
-.portfolio__list {}
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
 
-.portfolio__item {}
+.portfolio__item {
+    width: calc((100% - 72px) / 4);
+    padding: 24px 42px;
+}
 
 .portfolio__image {}
 
